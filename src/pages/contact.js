@@ -42,14 +42,14 @@ export default function Offices({ locations }) {
               contato@vogainvest.com
             </p>
           </div>
-          {locations?.map(location => (
+          {/* {locations?.map(location => (
             <div className='flex mt-12' key={location.id}>
               <FontAwesomeIcon className='mr-4 pt-2' icon={faLocationDot} />
               <p className='text-2xl'>
                 <span className='font-bold text-3xl'>{location.title}: </span>{location.content_escritorio.summary}
               </p>
             </div>
-          ))}
+          ))} */}
         </div>
         <div className='lg:col-span-6 col-span-4 lg:col-end-13'>
           <Formik
@@ -146,16 +146,16 @@ export default function Offices({ locations }) {
   )
 }
 
-export async function getStaticProps(context) {
-  const { data } = await client.query({
-    query: getLocations
-  });
+// export async function getStaticProps(context) {
+//   const { data } = await client.query({
+//     query: getLocations
+//   });
 
-  const locations = data?.escritorios?.edges.map(({ node }) => node);
+//   const locations = data?.escritorios?.edges.map(({ node }) => node);
 
-  return {
-    props: {
-      locations
-    }
-  }
-}
+//   return {
+//     props: {
+//       locations
+//     }
+//   }
+// }

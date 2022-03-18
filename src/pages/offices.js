@@ -38,7 +38,7 @@ export default function Offices({ offices }) {
           </a>
         </div>
       </Container>
-      <Container>
+      {/* <Container>
         {offices?.map(office => (
           <Office
             key={office.id}
@@ -49,24 +49,24 @@ export default function Offices({ offices }) {
             link={office.content_escritorio.link}
           />
         ))}
-      </Container>
+      </Container> */}
       <OpenAccount />
       <Footer />
     </>
   )
 }
 
-export async function getStaticProps(context) {
-  const { data } = await client.query({
-    query: getOffices
-  });
+// export async function getStaticProps(context) {
+//   const { data } = await client.query({
+//     query: getOffices
+//   });
 
-  const offices = data?.escritorios?.edges.map(({ node }) => node);
+//   const offices = data?.escritorios?.edges.map(({ node }) => node);
   
-  return {
-    props: {
-      offices
-    },
-    revalidate: 600
-  }
-}
+//   return {
+//     props: {
+//       offices
+//     },
+//     revalidate: 600
+//   }
+// }

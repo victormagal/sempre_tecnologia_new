@@ -42,7 +42,7 @@ export default function Home({ products }) {
           <a className='bg-dark-gray block font-bold py-3 rounded-full text-center text-white uppercase lg:w-1/2 w-full' title='Conheça a Voga Invest'>Conheça a Voga Invest</a>
         </Link>
       </ContainerImageAndContent>
-      <ContainerWithBackgroundImage uri='/bg-products-home.png'>
+      {/* <ContainerWithBackgroundImage uri='/bg-products-home.png'>
         <Container>
           <div className='lg:col-span-10 col-span-4 lg:col-start-2 flex flex-col items-stretch py-32'>
             {products?.map(product => (
@@ -53,7 +53,7 @@ export default function Home({ products }) {
             </Link>
           </div>
         </Container>
-      </ContainerWithBackgroundImage>
+      </ContainerWithBackgroundImage> */}
       <ContainerWithBackgroundImage uri='/bg-profiles-home.png'>
         <Container newClasses='py-32'>
           <div className='lg:col-span-6 col-span-4'>
@@ -112,17 +112,17 @@ export default function Home({ products }) {
   )
 }
 
-export async function getStaticProps(context) {
-  const { data } = await client.query({
-    query: getProducts
-  });
+// export async function getStaticProps(context) {
+//   const { data } = await client.query({
+//     query: getProducts
+//   });
 
-  const products = data?.produtos?.edges.map(({ node }) => node);
+//   const products = data?.produtos?.edges.map(({ node }) => node);
   
-  return {
-    props: {
-      products
-    },
-    revalidate: 600
-  }
-}
+//   return {
+//     props: {
+//       products
+//     },
+//     revalidate: 600
+//   }
+// }
