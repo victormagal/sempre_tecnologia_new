@@ -79,3 +79,48 @@ export const getQualitiesAndPrizes = gql`
     }
   }
 `;
+
+export const getAllNationalDestinations = gql`
+  query allNationalDestinations {
+    destinosNacionais {
+      edges {
+        node {
+          custom_destinations_fields {
+            stateCountry
+            summary
+          }
+          date
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+          id
+          slug
+          title
+        }
+      }
+    }
+  }
+`;
+
+export const getAllNationalDestinationsSlugs = gql`
+  query allNationalDestinations {
+    destinosNacionais {
+      nodes {
+        slug
+      }
+    }
+  }
+`;
+
+export const getNationalDestinationBySlug = gql`
+  query nationalDestinationBySlug($slug: String!) {
+    destinoNacionalBy(slug: $slug) {
+      custom_destinations_fields {
+        content
+      }
+      title
+    }
+  }
+`;
