@@ -1,6 +1,5 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { Container } from '../../components/Guide';
+import { Footer, Header } from '../../components/Structure'
+import { Container } from '../../components/Foundation';
 import client from '../../utils/client';
 import { getAllNationalDestinationsSlugs, getNationalDestinationBySlug } from '../../utils/queries';
 

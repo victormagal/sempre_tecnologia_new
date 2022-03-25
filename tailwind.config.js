@@ -6,27 +6,18 @@ module.exports = {
     "./src/components/**/*.{js, ts, jsx, tsx}"
   ],
   theme: {
-    colors: {
-      'dark-blue': '#00293D',
-      'baby-blue': '#CFEBFF',
-      'dark-gray': '#011E2C',
-      'soft-blue': '#008AEE',
-      'white': 'white',
-      'red': 'red',
-      'baby-red': '#F7A8A8'
-    },
     extend: {
-      backgroundImage: {
-        'mail-response': "url('/bg-mail.png')"
+      colors: {
+        'custom-gray': '#7A9192',
+        'custom-purple': '#9E61A4',
+        'soft-green': '#77C8D2'
       },
       fontFamily: {
-        'sans': ['Montserrat', ...defaultTheme.fontFamily.sans]
+        'sans': ['Fauna One', ...defaultTheme.fontFamily.sans],
+        'serif': ['PT Sans', ...defaultTheme.fontFamily.serif]
       },
-      height: {
-        'image': '50rem'
-      },
-      margin: {
-        'mail': '20.9rem'
+      spacing: {
+        '112': '28rem'
       }
     },
   },

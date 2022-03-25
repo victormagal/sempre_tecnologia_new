@@ -1,7 +1,5 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Card from '../components/Card';
-import { Container } from '../components/Guide';
+import { Card, Footer, Header, Hero } from '../components/Structure';
+import { Container } from '../components/Foundation';
 import client from '../utils/client';
 import { getAllNationalDestinations } from '../utils/queries';
 
@@ -10,18 +8,19 @@ export default function NationalDestinations({ destinations }) {
   return (
     <>
       <Header />
-      <div className='bg-bottom bg-mail-response bg-no-repeat'>
-        <Container newClasses='h-screen flex items-center'>
-          <div className='lg:col-span-10 grid lg:grid-cols-9'>
+      <div>
+        <Hero search={false} title='Destinos Nacionais' uri='/bg-national-destinations.jpg' />
+        <Container>
+          <div className='lg:col-span-10 grid lg:grid-cols-9 gap-8'>
             {destinations?.map(destination => (
               <Card
+                date={destination.date}
                 key={destination.id}
                 slug={destination.slug}
-                thumb={destination.featuredImage.node.sourceUrl}
-                title={destination.title}
                 subtitle={destination.custom_destinations_fields.stateCountry}
                 summary={destination.custom_destinations_fields.summary}
-                date={destination.date}
+                thumb={destination.featuredImage.node.sourceUrl}
+                title={destination.title}
               />
             ))}
           </div>

@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Container } from '../Guide';
+import { Container } from '../../Foundation';
 
 export default function Footer() {
   return (
     <>
-      <div className='bg-dark-blue lg:py-40 py-20'>
+      <div className='bg-soft-green lg:py-40 py-20'>
         <Container>
           <div className='col-span-4'>
             <Image

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import { Container } from '../Guide';
+import { Container } from '../../Foundation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,11 +12,11 @@ export default function Header() {
   return (
     <>
       <Head>
-        <title>Voga Invest | XP</title>
+        <title>Meu Clube Bancorbrás</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
-      <div className='bg-dark-blue py-8'>
-        <Container>
+      <div className='py-8'>
+        {/* <Container>
           <div className='col-span-3 flex items-stretch'>
             <Image
               alt='Voga Invest XP'
@@ -58,11 +58,6 @@ export default function Header() {
                   <a className='text-white hover:text-soft-blue' title='Nossos Escritórios'>Nossos Escritórios</a>
                 </Link>
               </li>
-              {/* <li>
-                <Link href='/'>
-                  <a className='text-white hover:text-soft-blue' title='Voga Insights'>Voga Insights</a>
-                </Link>
-              </li> */}
               <li>
                 <Link href='/contact'>
                   <a className='text-white hover:text-soft-blue' title='Contato'>Contato</a>
@@ -96,11 +91,6 @@ export default function Header() {
                 <a className='text-white hover:text-soft-blue' title='Nossos Escritórios'>Nossos Escritórios</a>
               </Link>
             </li>
-            {/* <li>
-              <Link href='/'>
-                <a className='text-white hover:text-soft-blue' title='Voga Insights'>Voga Insights</a>
-              </Link>
-            </li> */}
             <li>
               <Link href='/contact'>
                 <a className='text-white hover:text-soft-blue' title='Contato'>Contato</a>
@@ -112,7 +102,7 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-        </Container>
+        </Container> */}
       </div>
     </>
   );
