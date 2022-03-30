@@ -119,6 +119,13 @@ export const getNationalDestinationBySlug = gql`
     destinoNacionalBy(slug: $slug) {
       custom_destinations_fields {
         content
+        summary
+      }
+      date
+      featuredImage {
+        node {
+          sourceUrl
+        }
       }
       title
     }

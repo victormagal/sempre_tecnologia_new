@@ -10,8 +10,8 @@ export default function NationalDestinations({ destinations }) {
       <Header />
       <div>
         <Hero search={false} title='Destinos Nacionais' uri='/bg-national-destinations.jpg' />
-        <Container>
-          <div className='lg:col-span-10 grid lg:grid-cols-9 gap-8'>
+        <Container newClasses='py-16'>
+          <div className='lg:col-span-10 grid lg:grid-cols-9 gap-x-8 gap-y-16'>
             {destinations?.map(destination => (
               <Card
                 date={destination.date}

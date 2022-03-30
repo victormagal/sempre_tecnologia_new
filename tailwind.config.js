@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'custom-gray': '#7A9192',
         'custom-purple': '#9E61A4',
+        'soft-gray': '#BCC8C8',
         'soft-green': '#77C8D2'
       },
       fontFamily: {
