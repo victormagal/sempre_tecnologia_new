@@ -44,7 +44,7 @@ export default function DestinationPage({ destination }) {
           </ul>
           <h1 className='col-span-6 text-4xl text-custom-purple'>{destination.custom_destinations_fields.summary}</h1>
           <p className='col-span-6 font-serif text-custom-gray text-xs'>Publicado em: {new Date(destination.date).toLocaleDateString('pt-BR')}</p>
-          <div className='col-span-6' dangerouslySetInnerHTML={{ __html: destination.custom_destinations_fields.content }} />
+          <div className='col-span-6 teste' dangerouslySetInnerHTML={{ __html: destination.custom_destinations_fields.content }} />
         </div>
       </Container>
       <Footer />

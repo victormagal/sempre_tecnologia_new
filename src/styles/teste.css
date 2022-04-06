@@ -1,0 +1,6 @@
+.teste {
+    @apply bg-slate-600;
+    & > p {
+        @apply text-white;
+    }
+}
