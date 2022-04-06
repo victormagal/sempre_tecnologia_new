@@ -7,15 +7,14 @@ import { getAllNationalDestinationsSlugs, getNationalDestinationBySlug } from '.
 import { Container } from '../../components/Foundation';
 
 export default function DestinationPage({ destination }) {
-  // console.log(destination);
+  console.log(destination);
   return (
     <>
       <Header />
-      {/* <Hero search={false} title={destination.title} uri={destination.featuredImage.node.sourceUrl} /> */}
-      <img className='w-full' src={destination.featuredImage.node.sourceUrl} title={destination.title} />
+      <Hero search={false} title={destination.title} uri={destination.featuredImage.node.sourceUrl} />
       <Container>
         <div className='col-span-6 col-start-4 grid grid-cols-6 gap-6'>
-          <h1 className='col-span-4'>{destination.title}</h1>
+          <h2 className='col-span-4 font-serif text-custom-gray text-xl'>{destination.title}</h2>
           <ul className='col-span-2 flex justify-end space-x-3'>
             <li>
               <a href='#this' rel='noreferrer' target='_blank' title='Facebook'>
@@ -43,7 +42,9 @@ export default function DestinationPage({ destination }) {
               </a>
             </li>
           </ul>
-          {/* <div dangerouslySetInnerHTML={{ __html: destination.custom_destinations_fields.content }} /> */}
+          <h1 className='col-span-6 text-4xl text-custom-purple'>{destination.custom_destinations_fields.summary}</h1>
+          <p className='col-span-6 font-serif text-custom-gray text-xs'>Publicado em: {new Date(destination.date).toLocaleDateString('pt-BR')}</p>
+          <div className='col-span-6' dangerouslySetInnerHTML={{ __html: destination.custom_destinations_fields.content }} />
         </div>
       </Container>
       <Footer />
