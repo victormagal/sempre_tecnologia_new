@@ -2,7 +2,7 @@ import { removeNonDigits } from './helpers';
 
 export const maskPhoneNumber = value => {
 	if (typeof value !== 'string') {
-		throw new TypeError('The parameter must be a string');
+		throw new TypeError('O parâmetro deve ser do tipo string');
 	}
 
 	const phoneMask = value => {

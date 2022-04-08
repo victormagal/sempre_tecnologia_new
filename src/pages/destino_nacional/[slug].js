@@ -7,7 +7,6 @@ import { getAllNationalDestinationsSlugs, getNationalDestinationBySlug } from '.
 import { Container } from '../../components/Foundation';
 
 export default function DestinationPage({ destination }) {
-  console.log(destination);
   return (
     <>
       <Header />
