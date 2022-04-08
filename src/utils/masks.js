@@ -1,23 +1,23 @@
 import { removeNonDigits } from './helpers';
 
-export const maskPhoneNumber = value => {
-	if (typeof value !== 'string') {
-		throw new TypeError('O parâmetro deve ser do tipo string');
-	}
+export const maskPhoneNumber = (value) => {
+  if (typeof value !== 'string') {
+    throw new TypeError('O parâmetro deve ser do tipo string');
+  }
 
-	const phoneMask = value => {
-		const separator = value.length < 9 ? 4 : 5;
+  const phoneMask = () => {
+    const separator = value.length < 9 ? 4 : 5;
 
-		if (value.length > 4)
-			return `${value.slice(0, separator)}-${value.slice(separator)}`;
+    if (value.length > 4)
+      return `${value.slice(0, separator)}-${value.slice(separator)}`;
 
-		return value;
-	};
+    return value;
+  };
 
-	return removeNonDigits(value)
-		.substr(0, 11)
-		.replace(
-			/^(\d{2})(\d{1,9})?/,
-			(_, ddd, phone = '') => `(${ddd}) ${phoneMask(phone)}`
-		);
+  return removeNonDigits(value)
+    .substr(0, 11)
+    .replace(
+      /^(\d{2})(\d{1,9})?/,
+      (_, ddd, phone = '') => `(${ddd}) ${phoneMask(phone)}`
+    );
 };

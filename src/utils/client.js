@@ -1,28 +1,28 @@
-import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
+import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 
 const link = createHttpLink({
-  uri: process.env.WORDPRESS_API_URL
+  uri: process.env.WORDPRESS_API_URL,
 });
 
 const cache = new InMemoryCache({
-  resultCaching: false
+  resultCaching: false,
 });
 
 const defaultOptions = {
   watchQuery: {
-    fetchPolicy: "no-cache",
-    errorPolicy: "ignore"
+    fetchPolicy: 'no-cache',
+    errorPolicy: 'ignore',
   },
   query: {
-    fetchPolicy: "no-cache",
-    errorPolicy: "all"
-  }
+    fetchPolicy: 'no-cache',
+    errorPolicy: 'all',
+  },
 };
 
 const client = new ApolloClient({
   link,
   cache,
-  defaultOptions
+  defaultOptions,
 });
 
 export default client;
