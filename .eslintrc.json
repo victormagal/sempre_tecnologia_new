@@ -5,6 +5,7 @@
 	},
 	"extends": [
 		"plugin:react/recommended",
+		"eslint:recommended",
 		"airbnb",
 		"plugin:@next/next/recommended",
 		"prettier"
@@ -21,9 +22,7 @@
 		"prettier"
 	],
 	"rules": {
-		"prettier/prettier": [
-			"error"
-		],
+		"prettier/prettier": ["error", {}, { "usePrettierrc": true }],
 		"react/react-in-jsx-scope": "off",
 		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
 		"react/prop-types": "off",

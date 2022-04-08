@@ -2,8 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
-    "./src/pages/**/*.{js, ts, jsx, tsx}",
-    "./src/components/**/*.{js, ts, jsx, tsx}"
+    './src/pages/**/*.{js, ts, jsx, tsx}',
+    './src/components/**/*.{js, ts, jsx, tsx}'
   ],
   theme: {
     extend: {
@@ -14,13 +14,13 @@ module.exports = {
         'soft-green': '#77C8D2'
       },
       fontFamily: {
-        'sans': ['Fauna One', ...defaultTheme.fontFamily.sans],
-        'serif': ['PT Sans', ...defaultTheme.fontFamily.serif]
+        sans: ['Fauna One', ...defaultTheme.fontFamily.sans],
+        serif: ['PT Sans', ...defaultTheme.fontFamily.serif]
       },
       spacing: {
-        '112': '28rem'
+        112: '28rem'
       }
-    },
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};

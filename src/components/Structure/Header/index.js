@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
-import { Container } from '../../Foundation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Container } from '../../Foundation';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,9 +13,9 @@ export default function Header() {
     <>
       <Head>
         <title>Meu Clube Bancorbrás</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className='py-8'>
+      <div className="py-8">
         {/* <Container>
           <div className='col-span-3 flex items-stretch'>
             <Image

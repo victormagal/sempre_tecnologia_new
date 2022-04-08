@@ -15,8 +15,8 @@ export default function sendMail(req, res) {
     port: '587',
     auth: {
       user: process.env.NODEMAILER_USER,
-      pass: process.env.NODEMAILER_PASS,
-    },
+      pass: process.env.NODEMAILER_PASS
+    }
   });
 
   transporter
@@ -25,7 +25,7 @@ export default function sendMail(req, res) {
       to: `${process.env.NODEMAILER_USER}`,
       subject: 'Contato via site',
       text: body.message,
-      html: message.replace(/\r\n/g, '<br />'),
+      html: message.replace(/\r\n/g, '<br />')
     })
     .then((response) => {
       res.send(response);

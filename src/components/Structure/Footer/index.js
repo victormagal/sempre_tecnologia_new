@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
   faInstagram,
-  faYoutube,
+  faYoutube
 } from '@fortawesome/fontawesome-free-brands';
 import { Container } from '../../Foundation';
 

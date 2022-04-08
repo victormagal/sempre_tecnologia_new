@@ -39,15 +39,15 @@ export default function NationalDestinations({ destinations }) {
 
 export async function getStaticProps() {
   const { data } = await client.query({
-    query: getAllNationalDestinations,
+    query: getAllNationalDestinations
   });
 
   const destinations = data?.destinosNacionais?.edges?.map(({ node }) => node);
 
   return {
     props: {
-      destinations,
+      destinations
     },
-    revalidate: 600,
+    revalidate: 600
   };
 }

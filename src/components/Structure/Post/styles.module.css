@@ -1,0 +1,39 @@
+.post {
+  @apply col-span-6 col-start-4 grid grid-cols-6 gap-6 py-14;
+
+  div {
+    @apply col-span-6;
+    
+    p {
+      @apply mb-8 text-custom-gray;
+  
+      img {
+        @apply w-full;
+      }
+    }
+  }
+
+  h1 {
+    @apply col-span-6 text-4xl text-custom-purple;
+  }
+
+  h2 {
+    @apply col-span-4 font-serif text-custom-gray text-2xl;
+  }
+
+  legend {
+    @apply col-span-6 font-serif text-custom-gray text-xs;
+  }
+
+  ul {
+    @apply col-span-2 flex justify-end space-x-3;
+
+    li {
+      a {
+        svg {
+          @apply h-5 text-soft-gray w-5;
+        }
+      }
+    }
+  }
+}
