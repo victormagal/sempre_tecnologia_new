@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/fontawesome-free-brands';
 import { Container } from '../../Foundation';
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="bg-soft-green py-20">
       <Container>
@@ -145,5 +145,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

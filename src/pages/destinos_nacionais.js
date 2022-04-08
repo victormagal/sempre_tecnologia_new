@@ -1,5 +1,6 @@
-import { Card, Footer, Header, Hero } from '../components/Structure';
+import { Card, Cards, Footer, Header, Hero } from '../components/Structure';
 import { Container } from '../components/Foundation';
+import { DesktopVertical } from '../components/Advertising';
 import client from '../utils/client';
 import { getAllNationalDestinations } from '../utils/queries';
 
@@ -13,23 +14,32 @@ export default function NationalDestinations({ destinations }) {
           title="Destinos Nacionais"
           uri="/bg-national-destinations.jpg"
         />
-        <Container newClasses="py-16">
-          <div className="lg:col-span-10 grid lg:grid-cols-9 gap-x-8 gap-y-16">
-            {destinations?.map((destination) => (
-              <Card
-                date={destination.date}
-                key={destination.id}
-                slug={destination.slug}
-                subtitle={destination.custom_destinations_fields.stateCountry}
-                summary={destination.custom_destinations_fields.summary}
-                thumb={destination.featuredImage.node.sourceUrl}
-                title={destination.title}
-              />
-            ))}
-          </div>
-          <div className="lg:col-span-2">
-            <p>Publicidade</p>
-          </div>
+        <Container>
+          <Cards>
+            {destinations?.map(
+              ({
+                date,
+                id,
+                slug,
+                custom_destinations_fields: { stateCountry, summary },
+                featuredImage: {
+                  node: { sourceUrl }
+                },
+                title
+              }) => (
+                <Card
+                  date={date}
+                  key={id}
+                  slug={slug}
+                  subtitle={stateCountry}
+                  summary={summary}
+                  thumb={sourceUrl}
+                  title={title}
+                />
+              )
+            )}
+          </Cards>
+          <DesktopVertical />
         </Container>
       </div>
       <Footer />

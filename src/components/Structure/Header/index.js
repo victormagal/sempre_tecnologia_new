@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-function Header() {
+export default function Header() {
   return (
     <Head>
       <title>Meu Clube Bancorbrás</title>
@@ -8,5 +8,3 @@ function Header() {
     </Head>
   );
 }
-
-export default Header;

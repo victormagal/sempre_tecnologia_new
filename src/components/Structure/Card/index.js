@@ -1,21 +1,29 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import styles from './styles.module.css';
 
-function Card({ date, slug, subtitle, summary, thumb, title }) {
+export default function Card({ date, slug, subtitle, summary, thumb, title }) {
   return (
     <Link href={`/destino_nacional/${slug}`}>
-      <div className="lg:col-span-3 cursor-pointer flex flex-col space-y-5">
-        <img alt={title} className="h-auto w-full" src={thumb} />
+      <div className={styles.card}>
+        <Image
+          alt={title}
+          height={250}
+          layout="responsive"
+          objectFit="cover"
+          quality={100}
+          src={thumb}
+          width={400}
+        />
         <div>
-          <h1 className="font-sans text-3xl text-custom-purple">{title}</h1>
-          <h2 className="font-sans text-xl text-custom-purple">{subtitle}</h2>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
         </div>
-        <p className="font-sans h-28 text-xl text-custom-gray">{summary}</p>
-        <p className="font-serif text-xs text-custom-gray">
+        <p>{summary}</p>
+        <legend>
           Publicado em: {new Date(date).toLocaleDateString('pt-BR')}
-        </p>
+        </legend>
       </div>
     </Link>
   );
 }
-
-export default Card;

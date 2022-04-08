@@ -2,7 +2,7 @@ import Content from './Content';
 import Share from './Share';
 import styles from './styles.module.css';
 
-function Post({ content, date, summary, title }) {
+export default function Post({ content, date, summary, title }) {
   return (
     <div className={styles.post}>
       <Share title={title} />
@@ -10,5 +10,3 @@ function Post({ content, date, summary, title }) {
     </div>
   );
 }
-
-export default Post;

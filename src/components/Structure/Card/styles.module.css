@@ -1,0 +1,19 @@
+.card {
+  @apply lg:col-span-3 cursor-pointer flex flex-col space-y-5;
+
+  h1 {
+    @apply text-3xl text-custom-purple;
+  }
+
+  h2 {
+    @apply text-xl text-custom-purple;
+  }
+
+  legend {
+    @apply font-serif text-xs text-custom-gray;
+  }
+
+  p {
+    @apply h-28 text-xl text-custom-gray;
+  }
+}
