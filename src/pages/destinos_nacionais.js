@@ -1,6 +1,4 @@
-import {
-  Card, Footer, Header, Hero,
-} from '../components/Structure';
+import { Card, Footer, Header, Hero } from '../components/Structure';
 import { Container } from '../components/Foundation';
 import client from '../utils/client';
 import { getAllNationalDestinations } from '../utils/queries';
@@ -10,7 +8,11 @@ export default function NationalDestinations({ destinations }) {
     <>
       <Header />
       <div>
-        <Hero search={false} title="Destinos Nacionais" uri="/bg-national-destinations.jpg" />
+        <Hero
+          search={false}
+          title="Destinos Nacionais"
+          uri="/bg-national-destinations.jpg"
+        />
         <Container newClasses="py-16">
           <div className="lg:col-span-10 grid lg:grid-cols-9 gap-x-8 gap-y-16">
             {destinations?.map((destination) => (
@@ -35,7 +37,7 @@ export default function NationalDestinations({ destinations }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const { data } = await client.query({
     query: getAllNationalDestinations,
   });

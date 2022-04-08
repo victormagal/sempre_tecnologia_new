@@ -4,8 +4,8 @@ import Header from './Header';
 import Hero from './Hero';
 
 module.exports = {
-    Card,
-    Footer,
-    Header,
-    Hero
+  Card,
+  Footer,
+  Header,
+  Hero,
 };

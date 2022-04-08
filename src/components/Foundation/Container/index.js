@@ -1,6 +1,10 @@
 export default function Container({ children, newClasses }) {
   return (
-    <div className={`container grid lg:grid-cols-12 grid-cols-4 gap-8 mx-auto px-4 ${newClasses && newClasses}`}>
+    <div
+      className={`container grid lg:grid-cols-12 grid-cols-4 gap-8 mx-auto px-4 ${
+        newClasses && newClasses
+      }`}
+    >
       {children}
     </div>
   );
