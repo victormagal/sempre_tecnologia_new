@@ -4,10 +4,4 @@ import Header from './Header';
 import Hero from './Hero';
 import Post from './Post';
 
-module.exports = {
-  Card,
-  Footer,
-  Header,
-  Hero,
-  Post
-};
+export { Card, Footer, Header, Hero, Post };

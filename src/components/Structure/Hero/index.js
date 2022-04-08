@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Container } from '../../Foundation';
 
-export default function Hero({ search, title, uri }) {
+function Hero({ search, title, uri }) {
   return (
     <div className="relative">
       <Image
@@ -35,3 +35,5 @@ export default function Hero({ search, title, uri }) {
     </div>
   );
 }
+
+export default Hero;

@@ -8,7 +8,7 @@ import {
 } from '@fortawesome/fontawesome-free-brands';
 import { Container } from '../../Foundation';
 
-export default function Footer() {
+function Footer() {
   return (
     <div className="bg-soft-green py-20">
       <Container>
@@ -58,71 +58,86 @@ export default function Footer() {
         <ul className="col-span-2 col-start-5 flex flex-col space-y-4">
           <li>
             <Link href="/">
-              <a className="text-white" title="Por dentro do Clube">
+              <p
+                className="cursor-pointer text-white"
+                title="Por dentro do Clube"
+              >
                 Por dentro do Clube
-              </a>
+              </p>
             </Link>
           </li>
           <li>
             <Link href="/">
-              <a className="text-white" title="Minha Viagem">
+              <p className="cursor-pointer text-white" title="Minha Viagem">
                 Minha Viagem
-              </a>
+              </p>
             </Link>
           </li>
           <li>
             <Link href="/">
-              <a className="text-white" title="Termos de Uso">
+              <p className="cursor-pointer text-white" title="Termos de Uso">
                 Termos de Uso
-              </a>
+              </p>
             </Link>
           </li>
         </ul>
         <ul className="col-span-2 flex flex-col space-y-4">
           <li>
             <Link href="/">
-              <a className="text-white" title="Instituto Bancorbrás">
+              <p
+                className="cursor-pointer text-white"
+                title="Instituto Bancorbrás"
+              >
                 Instituto Bancorbrás
-              </a>
+              </p>
             </Link>
           </li>
           <li>
             <Link href="/">
-              <a className="text-white" title="Destinos Inusitados">
+              <p
+                className="cursor-pointer text-white"
+                title="Destinos Inusitados"
+              >
                 Destinos Inusitados
-              </a>
+              </p>
             </Link>
           </li>
         </ul>
         <ul className="col-span-2 flex flex-col space-y-4">
           <li>
             <Link href="/">
-              <a className="text-white" title="Estrelas do Clube">
+              <p
+                className="cursor-pointer text-white"
+                title="Estrelas do Clube"
+              >
                 Estrelas do Clube
-              </a>
+              </p>
             </Link>
           </li>
           <li>
             <Link href="/">
-              <a className="text-white" title="Bagagem Gastronômica">
+              <p
+                className="cursor-pointer text-white"
+                title="Bagagem Gastronômica"
+              >
                 Bagagem Gastronômica
-              </a>
+              </p>
             </Link>
           </li>
         </ul>
         <ul className="col-span-2 flex flex-col space-y-4">
           <li>
             <Link href="/">
-              <a className="text-white" title="Diário de Bordo">
+              <p className="cursor-pointer text-white" title="Diário de Bordo">
                 Diário de Bordo
-              </a>
+              </p>
             </Link>
           </li>
           <li>
             <Link href="/">
-              <a className="text-white" title="Maior Idade">
+              <p className="cursor-pointer text-white" title="Maior Idade">
                 Maior Idade
-              </a>
+              </p>
             </Link>
           </li>
         </ul>
@@ -130,3 +145,5 @@ export default function Footer() {
     </div>
   );
 }
+
+export default Footer;

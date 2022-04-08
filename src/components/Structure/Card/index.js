@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Card({ date, slug, subtitle, summary, thumb, title }) {
+function Card({ date, slug, subtitle, summary, thumb, title }) {
   return (
     <Link href={`/destino_nacional/${slug}`}>
       <div className="lg:col-span-3 cursor-pointer flex flex-col space-y-5">
@@ -17,3 +17,5 @@ export default function Card({ date, slug, subtitle, summary, thumb, title }) {
     </Link>
   );
 }
+
+export default Card;
