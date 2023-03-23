@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Header />
       <Container>
-        <p>Página inicial</p>
+        <p>Sempre Tecnologia, sempre com você</p>
       </Container>
       <Footer />
     </>
