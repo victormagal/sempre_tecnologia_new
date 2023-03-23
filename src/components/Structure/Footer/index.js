@@ -5,7 +5,7 @@ import {
   faFacebookF,
   faInstagram,
   faYoutube
-} from '@fortawesome/fontawesome-free-brands';
+} from '@fortawesome/free-brands-svg-icons';
 import { Container } from '../../Foundation';
 
 export default function Footer() {
