@@ -14,8 +14,8 @@ module.exports = {
         'soft-green': '#77C8D2'
       },
       fontFamily: {
-        sans: ['Fauna One', ...defaultTheme.fontFamily.sans],
-        serif: ['PT Sans', ...defaultTheme.fontFamily.serif]
+        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+        serif: ['Exo 2', ...defaultTheme.fontFamily.serif]
       },
       spacing: {
         112: '28rem'
