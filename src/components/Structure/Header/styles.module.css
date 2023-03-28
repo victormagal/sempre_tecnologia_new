@@ -1,0 +1,7 @@
+.logo {
+  @apply lg:col-span-2;
+}
+
+.navBar {
+  @apply lg:col-span-8
+}
