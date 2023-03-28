@@ -2,18 +2,18 @@
   @apply lg:col-span-3 cursor-pointer flex flex-col space-y-5;
 
   h1 {
-    @apply text-3xl text-custom-purple;
+    @apply text-3xl;
   }
 
   h2 {
-    @apply text-xl text-custom-purple;
+    @apply text-xl;
   }
 
   legend {
-    @apply font-serif text-xs text-custom-gray;
+    @apply font-serif text-xs;
   }
 
   p {
-    @apply h-28 text-xl text-custom-gray;
+    @apply h-28 text-xl;
   }
 }

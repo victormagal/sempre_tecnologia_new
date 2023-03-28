@@ -5,7 +5,7 @@
     @apply col-span-6;
     
     p {
-      @apply mb-8 text-custom-gray;
+      @apply mb-8;
   
       img {
         @apply w-full;
@@ -14,15 +14,15 @@
   }
 
   h1 {
-    @apply col-span-6 text-4xl text-custom-purple;
+    @apply col-span-6 text-4xl;
   }
 
   h2 {
-    @apply col-span-4 font-serif text-custom-gray text-2xl;
+    @apply col-span-4 font-serif text-2xl;
   }
 
   legend {
-    @apply col-span-6 font-serif text-custom-gray text-xs;
+    @apply col-span-6 font-serif text-xs;
   }
 
   ul {
@@ -31,7 +31,7 @@
     li {
       a {
         svg {
-          @apply h-5 text-soft-gray w-5;
+          @apply h-5 w-5;
         }
       }
     }

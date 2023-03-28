@@ -1,7 +1,46 @@
 .logo {
-  @apply lg:col-span-2;
+  @apply lg:col-span-2 flex justify-center items-center;
 }
 
 .navBar {
-  @apply lg:col-span-8
+  @apply lg:col-span-8 flex justify-between items-center;
+
+  section {
+    @apply relative;
+
+    button {
+      @apply flex items-center font-sans text-sm text-white;
+
+      svg {
+        @apply ml-2;
+      }
+    }
+
+    div {
+      @apply absolute;
+
+      svg {
+        @apply text-white ml-6 h-8 w-8;
+      }
+
+      ul {
+        @apply bg-white -mt-5 p-5 rounded-lg w-60;
+  
+        li {
+          a {
+            @apply block font-semibold text-xs text-navbar-gray py-1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  @apply lg:col-span-2;
+
+  button {
+    @apply h-full w-full font-semibold text-sm text-white rounded;
+    background: linear-gradient(190deg, #01E675 14%, #02A756 89%);
+  }
 }
