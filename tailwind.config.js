@@ -11,8 +11,8 @@ module.exports = {
         'navbar-gray': '#70738A'
       },
       fontFamily: {
-        sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
-        serif: ['Exo 2', ...defaultTheme.fontFamily.serif]
+        'sans': ['Open Sans', ...defaultTheme.fontFamily.sans],
+        'serif': ['"Exo 2"', ...defaultTheme.fontFamily.serif]
       }
     }
   },
