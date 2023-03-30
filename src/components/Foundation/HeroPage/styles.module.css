@@ -1,0 +1,12 @@
+.container {
+  @apply relative;
+  height: 432px;
+
+  img {
+    @apply z-0 object-cover object-center;
+  }
+
+  div {
+    @apply relative z-10;
+  }
+}

@@ -24,142 +24,146 @@ export default function Header() {
         <title>Sempre Tecnologia</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Container newClasses="bg-gray-500 py-4">
-        <div className={styles.logo}>
-          <Link href="/">
-            <Image
-              alt="Sempre Tecnologia"
-              height={43}
-              quality={100}
-              src="logo-sempre.svg"
-              width={162}
-            />
-          </Link>
-        </div>
-        <nav className={styles.navBar}>
-          <section>
-            <button type="button" onClick={toggleMenu}>
-              Quem Somos
-              <FontAwesomeIcon icon={faChevronDown} />
-            </button>
-            <div className="hidden">
-              <FontAwesomeIcon icon={faCaretUp} />
-              <ul>
-                <li>
-                  <Link href="/">Blog</Link>
-                </li>
-                <li>
-                  <Link href="/">Trabalhe Conosco</Link>
-                </li>
-                <li>
-                  <Link href="/">Nossa História</Link>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <button type="button" onClick={toggleMenu}>
-              Soluções
-              <FontAwesomeIcon icon={faChevronDown} />
-            </button>
-            <div className="hidden">
-              <FontAwesomeIcon icon={faCaretUp} />
-              <ul>
-                <li>
-                  <Link href="/">Sistemas Web para Gestão Empresarial</Link>
-                </li>
-                <li>
-                  <Link href="/">
-                    Sistemas Web para Emissão de Nota Eletrônica
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/">Sistemas para Pequenos Varejos</Link>
-                </li>
-                <li>
-                  <Link href="/">Certificado Digital</Link>
-                </li>
-                <li>
-                  <Link href="/">Sistemas Web para Distribuidores</Link>
-                </li>
-                <li>
-                  <Link href="/">Sistemas Web para Gestão de Recorrência</Link>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <button type="button" onClick={toggleMenu}>
-              Segmentos
-              <FontAwesomeIcon icon={faChevronDown} />
-            </button>
-            <div className="hidden">
-              <FontAwesomeIcon icon={faCaretUp} />
-              <ul>
-                <li>
-                  <Link href="/">Distribuidores</Link>
-                </li>
-                <li>
-                  <Link href="/">Atacadistas</Link>
-                </li>
-                <li>
-                  <Link href="/">Pequenos Varejos</Link>
-                </li>
-                <li>
-                  <Link href="/">Contabilidade</Link>
-                </li>
-                <li>
-                  <Link href="/">Escolas e Faculdades</Link>
-                </li>
-                <li>
-                  <Link href="/">Prestadores de Serviços</Link>
-                </li>
-                <li>
-                  <Link href="/">Vendas Recorrentes</Link>
-                </li>
-                <li>
-                  <Link href="/">Cobrança de Mensalidade</Link>
-                </li>
-                <li>
-                  <Link href="/">MEI</Link>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <button type="button" onClick={toggleMenu}>
-              Seja Parceiro
-              <FontAwesomeIcon icon={faChevronDown} />
-            </button>
-            <div className="hidden">
-              <FontAwesomeIcon icon={faCaretUp} />
-              <ul>
-                <li>
-                  <Link href="/">Contadores</Link>
-                </li>
-                <li>
-                  <Link href="/">Certificado Digital</Link>
-                </li>
-                <li>
-                  <Link href="/">Sistemas Web</Link>
-                </li>
-              </ul>
-            </div>
-          </section>
-          <section>
-            <button type="button">Planos e Preços</button>
-          </section>
-          <section>
-            <button type="button">Unidades</button>
-          </section>
-          <section>
-            <button type="button">Contato</button>
-          </section>
-        </nav>
-        <div className={styles.contact}>
-          <button type="button">Fale agora</button>
-        </div>
-      </Container>
+      <div className="fixed top-0 z-50 w-full">
+        <Container newClasses="py-6">
+          <div className={styles.logo}>
+            <Link href="/">
+              <Image
+                alt="Sempre Tecnologia"
+                height={43}
+                quality={100}
+                src="logo-sempre.svg"
+                width={162}
+              />
+            </Link>
+          </div>
+          <nav className={styles.navBar}>
+            <section>
+              <button type="button" onClick={toggleMenu}>
+                Quem Somos
+                <FontAwesomeIcon icon={faChevronDown} />
+              </button>
+              <div className="hidden">
+                <FontAwesomeIcon icon={faCaretUp} />
+                <ul>
+                  <li>
+                    <Link href="/">Blog</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Trabalhe Conosco</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Nossa História</Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <button type="button" onClick={toggleMenu}>
+                Soluções
+                <FontAwesomeIcon icon={faChevronDown} />
+              </button>
+              <div className="hidden">
+                <FontAwesomeIcon icon={faCaretUp} />
+                <ul>
+                  <li>
+                    <Link href="/">Sistemas Web para Gestão Empresarial</Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      Sistemas Web para Emissão de Nota Eletrônica
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">Sistemas para Pequenos Varejos</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Certificado Digital</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Sistemas Web para Distribuidores</Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      Sistemas Web para Gestão de Recorrência
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <button type="button" onClick={toggleMenu}>
+                Segmentos
+                <FontAwesomeIcon icon={faChevronDown} />
+              </button>
+              <div className="hidden">
+                <FontAwesomeIcon icon={faCaretUp} />
+                <ul>
+                  <li>
+                    <Link href="/">Distribuidores</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Atacadistas</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Pequenos Varejos</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Contabilidade</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Escolas e Faculdades</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Prestadores de Serviços</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Vendas Recorrentes</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Cobrança de Mensalidade</Link>
+                  </li>
+                  <li>
+                    <Link href="/">MEI</Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <button type="button" onClick={toggleMenu}>
+                Seja Parceiro
+                <FontAwesomeIcon icon={faChevronDown} />
+              </button>
+              <div className="hidden">
+                <FontAwesomeIcon icon={faCaretUp} />
+                <ul>
+                  <li>
+                    <Link href="/">Contadores</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Certificado Digital</Link>
+                  </li>
+                  <li>
+                    <Link href="/">Sistemas Web</Link>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section>
+              <button type="button">Planos e Preços</button>
+            </section>
+            <section>
+              <button type="button">Unidades</button>
+            </section>
+            <section>
+              <button type="button">Contato</button>
+            </section>
+          </nav>
+          <div className={styles.contact}>
+            <button type="button">Fale agora</button>
+          </div>
+        </Container>
+      </div>
     </>
   );
 }
