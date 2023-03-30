@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'navbar-gray': '#70738A'
+        'navbar-gray': '#70738A',
+        'dark-blue': '#1F3D8C',
+        'soft-gray': '#70738A'
       },
       fontFamily: {
         'sans': ['Open Sans', ...defaultTheme.fontFamily.sans],

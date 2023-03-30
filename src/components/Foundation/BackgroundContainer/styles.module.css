@@ -1,0 +1,12 @@
+.container {
+  @apply relative flex flex-col justify-center;
+  height: 518px;
+
+  header {
+    @apply z-0;
+
+    img {
+      @apply object-cover object-center;
+    }
+  }
+}
